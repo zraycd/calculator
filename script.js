@@ -31,3 +31,14 @@ function operate(operator, a, b) {
             break;
     }
 }
+const display = document.querySelector('#display')
+let currentDisplay = ''
+document.querySelector('#nums').addEventListener('click', (event) => {
+    currentDisplay += event.target.innerText
+    display.innerText = currentDisplay
+})
+document.querySelector('#operators').addEventListener('click', (event) => {
+    currentDisplay += ' ' + event.target.innerText + ' '
+    display.innerText = currentDisplay
+})
+

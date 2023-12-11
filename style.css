@@ -1,18 +1,48 @@
+body {
+    font-family: sans-serif;
+}
 .calc {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 25vw;
-    height: 40vw;
+    height: 42vw;
     border: 5px solid black;
     border-radius: 5px;
     margin: 0;
 }
-button {
-    height: 20%;
-    width: 25%;
-    margin: 0;
+.right {
+    display: flex;
 }
-.display {
-    height: 20%;
+#nums {
+    display: flex;
+    height: 21vw;
+    width: 18.75vw;
+    flex-wrap: wrap;
+}
+#nums button, #operators button {
+    width: 6.25vw;
+    height: 7vw;
+    font-size: 10vh;
+}
+#operators {
+    display: flex;
+    flex-direction: column;
+}
+#display {
+    height: 8vw;
     width: 100%;
+    background-color: lightblue;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 10vh;
+}
+#options {
+    display: flex;
+}
+#options button {
+    height: 7vw;
+    width: 50%;
+    font-size: 5vh;
 }
